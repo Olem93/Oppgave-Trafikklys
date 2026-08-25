@@ -7,7 +7,30 @@
     <title>Trafikklys</title>
   </head>
   <body>
-    <h2 class="h3h3">Trafikklys</h2>
+    <h3 class="h3h3">Trafikklys</h3>
+    <div id="maindiv">
+      <div
+        class="lightcircle"
+        id="redLight"
+        onclick="changeColor('red', '#242424', '#242424')"
+      ></div>
+      <div
+        class="lightcircle"
+        id="yellowLight"
+        onclick="changeColor('#242424', 'yellow', '#242424')"
+      ></div>
+      <div
+        class="lightcircle"
+        id="greenLight"
+        onclick="changeColor('#242424', '#242424', 'green')"
+      ></div>
+    </div>
+
+    <div>
+      <button onclick="autoChangeSystem('red', 'yellow', 'green')">
+        auto lys her
+      </button>
+    </div>
 
     <script src="script.js"></script>
   </body>
